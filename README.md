@@ -1,10 +1,19 @@
-# my-vue-app
+# highlightDemo
 
-This template should help get you started developing with Vue 3 in Vite.
+## How its done
+
+This is a Demo to showcase the tech that allows to fake highlighting in a text-area.  
+Because a text-area can only displays an unformatted String we have to fake any highlightings by overlaying a second div-block that copys the contents of the text-area and puts <span> around the text that needs to be highlighted
+
+## What is being highlightd
+
+In this Demo every Word that starts with a Capital is being highlighed.
 
 ## Recommended IDE Setup
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-vue-plugin).
+
+Or Webstorm but you will need a license
 
 ## Type Support for `.vue` Imports in TS
 
