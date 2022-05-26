@@ -23,6 +23,8 @@
     <a href="https://codersblock.com/blog/highlight-text-inside-a-textarea/" target=”_blank”>reference</a>
     <pre>
       Rewritten in vue.js without jquery
+      This version prevents the use of HTML injections
+      by replacing '&lt' and '&gt' with HTML specialchars
     </pre>
   </div><!-- /reference -->
 
