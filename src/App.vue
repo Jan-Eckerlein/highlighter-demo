@@ -21,9 +21,9 @@
 
   <div class="reference">
     <a href="https://codersblock.com/blog/highlight-text-inside-a-textarea/" target=”_blank”>reference</a>
-    <p>
-      Rewritten in vue.js without jquery
-    </p>
+    <pre>
+      Rewritten in vue.js without jquery &lth1&gttest&lt/h1&gt
+    </pre>
   </div><!-- /reference -->
 
 </template>
@@ -52,9 +52,11 @@ export default {
   methods: {
     highlighting: function () {
       this.highlights = this.message
-          .replace(/[A-Z].*?\b/g, '<mark>$&</mark>');
-
-      // .replace(/\n$/g, '\n\n')
+        .replace(/\n$/g, '\n\n')
+        .replace(/</, '&lt')  // prevents HTML injections
+        .replace(/>/, '&gt')  //
+        .replace(/[A-Z].*?\b/g, '<mark>$&</mark>')
+      ;
     },
     scrollTextArea : function () {
       console.log("SCROOOOOOOOOL MORTY !");
