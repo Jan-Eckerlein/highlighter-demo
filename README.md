@@ -1,5 +1,11 @@
 # highlightDemo
 
+## Reference
+
+[original](https://codersblock.com/blog/highlight-text-inside-a-textarea/) was rewritten in Vue.js without the Use of jQuery  
+This version prevents the use of HTML injections by replacing `<` and `>` with HTML specialchars
+
+
 ## How its done
 
 This is a Demo to showcase the tech that allows to fake highlighting in a text-area.  
