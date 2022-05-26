@@ -57,8 +57,11 @@ export default {
         .replace(/\n$/g, '\n\n')
         .replace(/</, '&lt')  // prevents HTML injections
         .replace(/>/, '&gt')  //
-        .replace(/[A-Z].*?\b/g, '<mark>$&</mark>')
-      ;
+        .replace(
+            /[A-Z].*?\b/g,
+            '<mark style="border-radius: 3px; color: transparent; background-color: #ec9f9e;">$&</mark>'
+        )
+
     },
     scrollTextArea : function () {
       console.log("SCROOOOOOOOOL MORTY !");
@@ -68,7 +71,7 @@ export default {
           .scrollTop = this.highlightsTop;
 
     },
-    perspectiveSwitch : function (e) {
+    perspectiveSwitch : function () {
       console.log("I SAID SWITCH MORTY !");
       document.querySelector('.container')
         .classList.toggle('perspective');

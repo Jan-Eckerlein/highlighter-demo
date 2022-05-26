@@ -51,12 +51,6 @@ textarea {
     transition: transform 1s;
 }
 
-mark {
-    border-radius: 3px;
-    color: transparent;
-    background-color: #b1d5e5;
-}
-
 .perspective .backdrop {
     transform:
             perspective(1500px)
