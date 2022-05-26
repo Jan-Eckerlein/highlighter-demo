@@ -22,7 +22,7 @@
   <div class="reference">
     <a href="https://codersblock.com/blog/highlight-text-inside-a-textarea/" target=”_blank”>reference</a>
     <pre>
-      Rewritten in vue.js without jquery &lth1&gttest&lt/h1&gt
+      Rewritten in vue.js without jquery
     </pre>
   </div><!-- /reference -->
 
