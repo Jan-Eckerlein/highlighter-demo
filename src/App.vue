@@ -55,8 +55,8 @@ export default {
     highlighting: function () {
       this.highlights = this.message
         .replace(/\n$/g, '\n\n')
-        .replace(/</, '&lt')  // prevents HTML injections
-        .replace(/>/, '&gt')  //
+        .replace(/</g, '&lt')  // prevents HTML injections
+        .replace(/>/g, '&gt')  //
         .replace(
             /[A-Z].*?\b/g,
             '<mark style="border-radius: 3px; color: transparent; background-color: #ec9f9e;">$&</mark>'
